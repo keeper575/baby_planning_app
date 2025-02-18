@@ -1,0 +1,158 @@
+/* styles.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.scroll-view {
+  padding: 16px;
+}
+
+.app-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  color: #4a6da7;
+}
+
+.phase-container {
+  margin-bottom: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.current-phase {
+  border-left: 4px solid #4a6da7;
+}
+
+.completed-phase {
+  opacity: 0.8;
+}
+
+.phase-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.step-container {
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.step-container:hover {
+  background-color: #f9f9f9;
+}
+
+.completed-step {
+  background-color: #f0f8ff;
+}
+
+.step-checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  border: 2px solid #4a6da7;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.checkmark {
+  color: #4a6da7;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.step-text-container {
+  flex: 1;
+}
+
+.step-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.step-description {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.locked-text {
+  font-style: italic;
+  color: #999;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.next-step-container {
+  background-color: #e6f2ff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-left: 4px solid #4a6da7;
+}
+
+.next-step-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4a6da7;
+  margin: 0 0 10px 0;
+}
+
+.next-step-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 5px 0;
+}
+
+.next-step-phase {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+  margin: 0 0 10px 0;
+}
+
+.next-step-description {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .phase-container {
+    padding: 15px;
+  }
+  
+  .step-container {
+    padding: 12px;
+  }
+}
